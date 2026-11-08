@@ -7,11 +7,11 @@ import HelloWorld from '@/components/HelloWorld.vue';
 <template>
   <header>
     <img
-      alt="Vue logo"
       class="logo"
-      height="125"
+      alt="Vue logo"
       src="@/assets/logo.svg"
       width="125"
+      height="125"
     />
 
     <div class="wrapper">
@@ -81,9 +81,9 @@ nav a:first-of-type {
   }
 
   nav {
-    padding: 1rem 0;
     margin-top: 1rem;
     margin-left: -1rem;
+    padding: 1rem 0;
     font-size: 1rem;
     text-align: left;
   }

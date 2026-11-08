@@ -25,8 +25,8 @@ defineProps<{
 h1 {
   position: relative;
   top: -10px;
-  font-size: 2.6rem;
   font-weight: 500;
+  font-size: 2.6rem;
 }
 
 h3 {

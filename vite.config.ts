@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath, URL } from 'node:url';
 
 import vue from '@vitejs/plugin-vue';
-import { defineConfig, type UserConfig } from 'vite-plus';
+import { defineConfig, type UserConfig, configDefaults } from 'vite-plus';
 
 import { visualizer } from 'rollup-plugin-visualizer';
 import { checker } from 'vite-plugin-checker';
@@ -130,6 +130,12 @@ export default defineConfig(({ command, mode }): UserConfig => {
           }
         }
       }
+    },
+    // Vitest config
+    test: {
+      environment: 'jsdom',
+      exclude: [...configDefaults.exclude, 'e2e/**'],
+      root: fileURLToPath(new URL('./', import.meta.url))
     }
   };
 
