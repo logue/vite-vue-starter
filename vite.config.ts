@@ -136,7 +136,8 @@ export default defineConfig(({ command, mode }): UserConfig => {
       environment: 'jsdom',
       exclude: [...configDefaults.exclude, 'e2e/**'],
       root: fileURLToPath(new URL('./', import.meta.url))
-    }
+    },
+    staged: { '*': 'vp check --fix' }
   };
 
   return {
