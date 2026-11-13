@@ -3,6 +3,12 @@
   "editor.formatOnSave": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
+  "js/ts.experimental.useTsgo": true,
+  "js/ts.preferences.importModuleSpecifierEnding": "js",
+  "js/ts.reportStyleChecksAsWarnings": false,
+  "js/ts.tsdk.path": "node_modules/typescript",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "oxc.disableNestedConfig": true,
   "[javascript]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
@@ -14,10 +20,5 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "oxc.disableNestedConfig": true,
-  "js/ts.preferences.importModuleSpecifierEnding": "js",
-  "js/ts.reportStyleChecksAsWarnings": false,
-  "js/ts.updateImportsOnFileMove.enabled": "always",
-  "js/ts.experimental.useTsgo": true,
+  }
 }

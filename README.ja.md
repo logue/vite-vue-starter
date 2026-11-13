@@ -3,17 +3,17 @@
 [English](README.md)
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-7-%230074c1.svg)](http://www.typescriptlang.org/)
-[![Node.js Version](https://img.shields.io/badge/node-%5E20.19.0%20%7C%7C%20%3E%3D22.12.0-brightgreen.svg)](https://nodejs.org/)
-[![pnpm](https://img.shields.io/badge/pnpm-11-pink.svg)](https://pnpm.io/)
-[![Vite](https://img.shields.io/badge/vite-8-purple.svg)](https://vite.dev/)
+[![Node.js Version](https://img.shields.io/badge/node-%5E22.22.1%20%7C%7C%20%3E%3D24.11.0-brightgreen.svg)](https://nodejs.org/)
+[![pnpm](https://img.shields.io/badge/pnpm-12-pink.svg)](https://pnpm.io/)
+[![Vite+](https://img.shields.io/badge/vite%2B-1.6-purple.svg)](https://viteplus.dev/)
 [![X Follow](https://img.shields.io/twitter/follow/logue256?style=plastic)](https://x.com/logue256)
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/logue?label=Sponsor&logo=github&color=ea4aaa)](https://github.com/sponsors/logue)
 
-このテンプレートは、Vue 3 と TypeScript を使用して Vite で開発を始めるのに役立ちます。Vue 3 の `<script setup vapor>` SFC を使用しており、[script setup ドキュメント](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) を参照して詳細を確認してください。
+このテンプレートは、Vue 3 と TypeScript を使用して [Vite+](https://viteplus.dev/) ツールチェーン（Vite / Rolldown / Vitest / Oxlint / Oxfmt）で開発を始めるのに役立ちます。Vue 3 の `<script setup vapor>` SFC を使用しており、[script setup ドキュメント](https://ja.vuejs.org/api/sfc-script-setup#sfc-script-setup) を参照して詳細を確認してください。
 
 [vue-router](https://router.vuejs.org/) と [Pinia](https://pinia.vuejs.org/) が含まれています。
 
-さらに、[Oxlint](https://oxc.rs/docs/guide/usage/linter)、[Oxfmt](https://oxc.rs/docs/guide/usage/formatter) が含まれており、実行時とコミット時に自動で実行されるように設定されています。（これらの設定は厳しく設定されているので、必要に応じて緩和してください。）
+さらに、[Oxlint](https://oxc.rs/docs/guide/usage/linter)、[Oxfmt](https://oxc.rs/docs/guide/usage/formatter) が含まれており、実行時とコミット時（`.vite-hooks/pre-commit` フックによる `vp staged`）に自動で実行されるように設定されています。型チェックと型情報を使った lint は TypeScript 7 と [vize](https://www.npmjs.com/package/vize) で行われます。（これらの設定は厳しく設定されているので、必要に応じて緩和してください。）
 
 開発サーバーの実行時には、[vite-plugin-checker](https://github.com/fi3ework/vite-plugin-checker) によってリアルタイムでチェックされます。
 
@@ -48,13 +48,13 @@ pnpm build
 ### テスト
 
 ```bash
-pnpm test:unit
+pnpm test:run
 pnpm test:e2e
 ```
 
 ## ✨ 特徴
 
-- **Vue 3** + **TypeScript** + **Vite** の組み合わせ
+- **Vue 3** + **TypeScript** + **Vite+** の組み合わせ
 - **vue-router** と **Pinia** によるルーティングと状態管理
 - **Oxlint**、**Oxfmt** によるコード品質管理
 - **Vitest** によるユニットテスト
@@ -79,29 +79,31 @@ pnpm test:e2e
 
 このテンプレートは [create-vue](https://github.com/vuejs/create-vue-templates/tree/main/typescript-router-pinia-vitest-playwright-eslint) のコマンドに近づけて設計されています。
 
-| コマンド        | 説明                                     |
-| --------------- | ---------------------------------------- |
-| `dev`           | 開発サーバーを起動                       |
-| `clean`         |                                          |
-| `lint`          | すべてのリンターを実行                   |
-| `lint:oxlint`   | oxlint を実行                            |
-| `lint:oxfmt`    | oxfmt でフォーマット                     |
-| `test`          | Vitest を実行                            |
-| `test:unit`     | ユニットテストを実行                     |
-| `test:coverage` | カバレッジレポートを出力                 |
-| `test:e2e`      | E2E テストを実行                         |
-| `build`         | 本番用ビルド                             |
-| `build:analyze` | Bundle Analyzer を実行                   |
-| `build:clean`   | 本番ビルドファイルをクリア               |
-| `build-only`    | チェックなしで本番ビルド（デプロイ用）   |
-| `clean`         | 成果物をクリア                           |
-| `clean:hard`    | 成果物と開発サーバーのキャッシュをクリア |
-| `type-check`    | Vue マークアップをチェック               |
-| `preview`       | 本番ビルドで生成されたプログラムを実行   |
+| コマンド         | 説明                                                |
+| ---------------- | --------------------------------------------------- |
+| `dev`            | 開発サーバーを起動                                  |
+| `lint`           | すべてのリンターを実行（vize / Oxlint / Oxfmt）     |
+| `lint:check`     | vize による型情報を使った lint                      |
+| `lint:oxlint`    | Oxlint を実行（自動修正あり）                       |
+| `lint:oxfmt`     | Oxfmt でフォーマット                                |
+| `test`           | Vitest を実行                                       |
+| `test:run`       | ユニットテストを 1 回実行                           |
+| `test:coverage`  | ユニットテストを実行しカバレッジレポートを出力      |
+| `test:e2e`       | Playwright による E2E テストを実行                  |
+| `build`          | 型チェックと本番用ビルド                            |
+| `build:analyze`  | Bundle Analyzer を実行                              |
+| `build:clean`    | 本番ビルドファイルをクリア                          |
+| `build-only`     | チェックなしで本番ビルド（デプロイ用）              |
+| `clean`          | 成果物をクリア                                      |
+| `clean:hard`     | 成果物と開発キャッシュをクリア                      |
+| `type-check`     | vize による型チェック（`tsconfig.app.json`）        |
+| `preview`        | 本番ビルドで生成されたプログラムを実行              |
+| `skills:install` | `skills-lock.json` から AI エージェントスキルを導入 |
+| `skills:update`  | AI エージェントスキルを更新                         |
 
 ## 🐛 トラブルシューティング
 
-ファイルを追加または削除するとエラーが発生し、修正しても開発サーバーに反映されない場合があります。その場合は、開発サーバーを停止し、`node_modules/.vite` ディレクトリ内のすべてのファイルを削除してください。`clean` コマンドでも実行できます。
+ファイルを追加または削除するとエラーが発生し、修正しても開発サーバーに反映されない場合があります。その場合は、開発サーバーを停止し、`node_modules/.vite` ディレクトリ内のすべてのファイルを削除してください。`clean:hard` コマンドでも実行できます。
 
 ## 📝 チェックリスト
 
@@ -110,7 +112,7 @@ pnpm test:e2e
 - [ ] `LICENSE` の作者名を変更
 - [ ] `public` のファビコンを変更
 - [ ] ファンディング情報が含まれる `.github` フォルダを削除
-- [ ] プロジェクトの方針に合わせて `AGENT.md` を見直す
+- [ ] プロジェクトの方針に合わせて `AGENTS.md` を見直す
 - [ ] README をクリーンアップし、不要なルートを削除
 
 ## 🔗 関連プロジェクト
