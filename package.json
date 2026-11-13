@@ -1,6 +1,6 @@
 {
   "name": "vite-vue-starter",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "private": true,
   "description": "Vue3 TypeScript Starter project for Vite+.",
   "homepage": "https://github.com/logue/vite-vue-starter",
@@ -44,11 +44,11 @@
     "pinia": "^4.1.0",
     "pinia-plugin-persistedstate": "^4.7.1",
     "vue": "^3.5.45",
-    "vue-router": "^5.5.0"
+    "vue-router": "^5.5.1"
   },
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.8.1",
-    "@playwright/test": "^1.65.0",
+    "@playwright/test": "^1.65.1",
     "@tsconfig/node-lts": "^26.0.1",
     "@types/jsdom": "^30.0.0",
     "@types/node": "^26.6.6",

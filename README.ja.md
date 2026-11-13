@@ -117,22 +117,11 @@ pnpm test:e2e
 
 ## 🔗 関連プロジェクト
 
-- **Vue 3 用**:
-  - [vite-vuetify-ts-starter](https://github.com/logue/vite-vuetify-ts-starter) - Vuetify 3 を使用
-    - [tauri-vuetify-starter](https://github.com/logue/tauri-vuetify-starter) - クロスプラットフォームのディスクトップアプリ向け
-  - [vite-element-plus-ts-starter](https://github.com/logue/vite-element-plus-ts-starter) - Element Plus を使用
-  - [rsbuild-vue-starter](https://github.com/logue/rsbuild-vue-starter) - Viteの代わりにRsbuildスタックで構築したもの
-  - vite-bootstrap-vue-ts-starter - 近日公開
-- **Vue 2 用**（非推奨）:
-  - [vite-vue2-ts-starter](https://github.com/logue/vite-vue2-ts-starter) - Vite Vue2 スターター
-  - [vite-vue2-vuetify-ts-starter](https://github.com/logue/vite-vue2-vuetify-ts-starter) - Vuetify2 を使用した UI ライブラリ
-  - [laravel9-vite-vue2-starter](https://github.com/logue/laravel9-vite-vue2-starter) - Laravel9 + Breeze 用 Vue2
-  - [vite-vue2-ts-ssr-starter](https://github.com/logue/vite-vue2-ts-ssr-starter) - SSR（サーバーサイドレンダリング）バージョン
+- [vite-vuetify-ts-starter](https://github.com/logue/vite-vuetify-starter) - Vuetify 3 を使用
+  - [tauri-vuetify-starter](https://github.com/logue/tauri-vuetify-starter) - クロスプラットフォームのディスクトップアプリ向け
+- [rsbuild-vue-starter](https://github.com/logue/rsbuild-vue-starter) - Viteの代わりにrstackで構築したもの
 
-## 🎨 開発者向けに作られました
+## ライセンス
 
-このテンプレートは、**UI/UX の卓越性** と **現代的な開発者体験** に焦点を当てて構築されています。すべてがシームレスに動作するよう、継続的なテストと更新を行っています。
-
-このプロジェクトの細部へのこだわりを気に入っていただけたら、Vue.js と Metaverse エコシステム全体での私の作業を支援するために、小さなスポンサーシップをお願いします。
-
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/logue?label=Sponsor&logo=github&color=ea4aaa)](https://github.com/sponsors/logue)
+©2023-2026 by Logue.
+Licensed under the [MIT License](LICENSE).

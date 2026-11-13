@@ -117,14 +117,12 @@ When using this template, follow the checklist to update your info properly.
 
 ## 🔗 Related Projects
 
-- **For Vue 3**:
-  - [vite-vuetify-ts-starter](https://github.com/logue/vite-vuetify-ts-starter) - With Vuetify 3
-    - [tauri-vuetify-starter](https://github.com/logue/tauri-vuetify-starter) - For cross-platform desktop application use.
-  - [vite-element-plus-ts-starter](https://github.com/logue/vite-element-plus-ts-starter) - With Element Plus
-  - [rsbuild-vue-starter](https://github.com/logue/rsbuild-vue-starter) - Built with Rsbuild stack instead of Vite
-  - vite-bootstrap-vue-ts-starter - Coming soon
-- **For Vue 2** (DEPRECATED):
-  - [vite-vue2-ts-starter](https://github.com/logue/vite-vue2-ts-starter) - Vite Vue2 starter
-  - [vite-vue2-vuetify-ts-starter](https://github.com/logue/vite-vue2-vuetify-ts-starter) - UI library using Vuetify2
-  - [laravel9-vite-vue2-starter](https://github.com/logue/laravel9-vite-vue2-starter) - Vue2 for Laravel9 + Breeze
-  - [vite-vue2-ts-ssr-starter](https://github.com/logue/vite-vue2-ts-ssr-starter) - SSR (Server Side Rendering) version
+- [vite-vuetify-starter](https://github.com/logue/vite-vuetify-ts-starter) - With Vuetify 3
+  - [tauri-vuetify-starter](https://github.com/logue/tauri-vuetify-starter) - For cross-platform desktop application use.
+- [vite-element-plus-ts-starter](https://github.com/logue/vite-element-plus-ts-starter) - With Element Plus
+- [rsbuild-vue-starter](https://github.com/logue/rsbuild-vue-starter) - Built with rstack instead of Vite
+
+## License
+
+©2023-2026 by Logue.
+Licensed under the [MIT License](LICENSE).
