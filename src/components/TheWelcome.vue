@@ -30,36 +30,19 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md');
     <template #heading>Tooling</template>
 
     This project is served and bundled with
-    <a
-      href="https://vite.dev/guide/features.html"
-      rel="noopener noreferrer"
-      target="_blank"
+    <a href="https://vite.dev/guide/features.html" rel="noopener noreferrer" target="_blank"
       >Vite</a
     >
     . The recommended IDE setup is
-    <a
-      href="https://code.visualstudio.com/"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      VSCode
-    </a>
+    <a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank"> VSCode </a>
     +
-    <a
-      href="https://github.com/vuejs/language-tools"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
+    <a href="https://github.com/vuejs/language-tools" rel="noopener noreferrer" target="_blank">
       Vue - Official
     </a>
     . If you need to test your components and web pages, check out
-    <a href="https://vitest.dev/" rel="noopener noreferrer" target="_blank">
-      Vitest
-    </a>
+    <a href="https://vitest.dev/" rel="noopener noreferrer" target="_blank"> Vitest </a>
     and
-    <a href="https://www.cypress.io/" rel="noopener noreferrer" target="_blank">
-      Cypress
-    </a>
+    <a href="https://www.cypress.io/" rel="noopener noreferrer" target="_blank"> Cypress </a>
     .
 
     <br />
@@ -78,43 +61,19 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md');
     <template #heading>Ecosystem</template>
 
     Get official tools and libraries for your project:
-    <a
-      href="https://pinia.vuejs.org/"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Pinia
-    </a>
+    <a href="https://pinia.vuejs.org/" rel="noopener noreferrer" target="_blank"> Pinia </a>
     ,
-    <a
-      href="https://router.vuejs.org/"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Vue Router
-    </a>
+    <a href="https://router.vuejs.org/" rel="noopener noreferrer" target="_blank"> Vue Router </a>
     ,
-    <a
-      href="https://test-utils.vuejs.org/"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
+    <a href="https://test-utils.vuejs.org/" rel="noopener noreferrer" target="_blank">
       Vue Test Utils
     </a>
     , and
-    <a
-      href="https://github.com/vuejs/devtools"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
+    <a href="https://github.com/vuejs/devtools" rel="noopener noreferrer" target="_blank">
       Vue Dev Tools
     </a>
     . If you need more resources, we suggest paying
-    <a
-      href="https://github.com/vuejs/awesome-vue"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
+    <a href="https://github.com/vuejs/awesome-vue" rel="noopener noreferrer" target="_blank">
       Awesome Vue
     </a>
     a visit.
@@ -127,9 +86,7 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md');
     <template #heading>Community</template>
 
     Got stuck? Ask your question on
-    <a href="https://chat.vuejs.org" rel="noopener noreferrer" target="_blank">
-      Vue Land
-    </a>
+    <a href="https://chat.vuejs.org" rel="noopener noreferrer" target="_blank"> Vue Land </a>
     (our official Discord server), or
     <a
       href="https://stackoverflow.com/questions/tagged/vue.js"
@@ -139,17 +96,11 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md');
       StackOverflow
     </a>
     . You should also follow the official
-    <a
-      href="https://bsky.app/profile/vuejs.org"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
+    <a href="https://bsky.app/profile/vuejs.org" rel="noopener noreferrer" target="_blank">
       @vuejs.org
     </a>
     Bluesky account or the
-    <a href="https://x.com/vuejs" rel="noopener noreferrer" target="_blank">
-      @vuejs
-    </a>
+    <a href="https://x.com/vuejs" rel="noopener noreferrer" target="_blank"> @vuejs </a>
     X account for latest news in the Vue world.
   </WelcomeItem>
 
@@ -159,13 +110,9 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md');
     </template>
     <template #heading>Support Vue</template>
 
-    As an independent project, Vue relies on community backing for its
-    sustainability. You can help us by
-    <a
-      href="https://vuejs.org/sponsor/"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
+    As an independent project, Vue relies on community backing for its sustainability. You can help
+    us by
+    <a href="https://vuejs.org/sponsor/" rel="noopener noreferrer" target="_blank">
       becoming a sponsor
     </a>
     .

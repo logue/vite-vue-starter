@@ -27,16 +27,23 @@ const IGNORE_PATTERNS = [
   '**/.nitro/**',
   '**/.nuxt/**',
   '**/.pnpm/**',
+  '**/.rsdoctor/**',
   '**/.rstack/**',
   '**/.vitest/**',
+  '**/.weangler/**',
   // Test coverage reports.
   '**/coverage/**',
+  '**/e2e/**',
   '**/playwright-report/**',
   '**/reports/**',
   '**/test-results/**',
   // Build artifacts.
   '**/dist/**',
+  '**/docs/**',
+  '**/storybook-static/**',
   '**/target/**',
+  // Wrangler
+  '**/worker-configuration.d.ts',
   // Node modules
   '**/node_modules/**'
 ];
@@ -143,7 +150,7 @@ export default defineConfig(({ command, mode }): UserConfig => {
   return {
     fmt: {
       ignorePatterns: IGNORE_PATTERNS,
-      printWidth: 80,
+      printWidth: 100,
       tabWidth: 2,
       useTabs: false,
       semi: true,
@@ -282,10 +289,7 @@ export default defineConfig(({ command, mode }): UserConfig => {
               }
             ],
             'typescript/ban-ts-comment': 'off',
-            'typescript/consistent-generic-constructors': [
-              'error',
-              'type-annotation'
-            ],
+            'typescript/consistent-generic-constructors': ['error', 'type-annotation'],
             'typescript/explicit-function-return-type': 'off',
             'typescript/strict-boolean-expressions': 'off',
             'typescript/triple-slash-reference': 'off',
@@ -428,8 +432,7 @@ export default defineConfig(({ command, mode }): UserConfig => {
             'vitest/no-standalone-expect': 'error',
             'vitest/no-unneeded-async-expect-function': 'error',
             'vitest/prefer-called-exactly-once-with': 'error',
-            'vitest/require-local-test-context-for-concurrent-snapshots':
-              'error',
+            'vitest/require-local-test-context-for-concurrent-snapshots': 'error',
             'vitest/valid-describe-callback': 'error',
             'vitest/valid-expect-in-promise': 'error',
             'vitest/valid-expect': 'error',
